@@ -25,3 +25,44 @@
    5. OVERRIDES / FIXES (siempre al final)
 ========================= */
 @import "overrides.css";
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #0b0f14;
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ligeramente más arriba */
+.loader-brand {
+  transform: translateY(-6%);
+}
+
+/* triángulo grande e invisible al inicio */
+.loader-play {
+  width: min(36vw, 560px);
+  height: auto;
+  opacity: 0;
+  transform-origin: 50% 50%;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+}
+
+/* stroke más fino */
+.play-stroke {
+  fill: none;
+  stroke: #f2f2f2;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

@@ -1,0 +1,70 @@
+/* =========================================
+   CARD VARIANT (sin padding)
+========================================= */
+.card-plain {
+  padding: 0;
+}
+
+/* =========================================
+   FRAMES GRID
+   Mobile: 1 columna
+   Desktop: 2 columnas
+========================================= */
+.frames-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr; /* mobile */
+}
+
+@media (min-width: 900px) {
+  .frames-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* desktop */
+    gap: var(--space-md);
+  }
+  .project-video video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+/* =========================================
+   FRAME ITEM
+========================================= */
+.frame {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-soft);
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+}
+
+.project-video {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-soft);
+}
+
+.project-video video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: cover;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  text-align: center;
+}

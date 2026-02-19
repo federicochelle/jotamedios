@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jotamedios - Director de fotografia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="top">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container flex flex-between flex-wrap header-inner">
+        <!-- Brand -->
+        <a
+          class="brand brand-logo-only"
+          href="#top"
+          aria-label="Jotamedios – Ir al inicio"
+        >
+          <img
+            class="brand-logo"
+            src="assets/logo.png"
+            alt="Jotamedios"
+            width="44"
+            height="44"
+            loading="eager"
+          />
+        </a>
+
+        <!-- Nav desktop -->
+        <nav class="nav nav-desktop" aria-label="Navegación principal">
+          <a class="nav-link" href="#trabajos">Trabajos</a>
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline"
+            href="https://www.instagram.com/jotamedios?igsh=MXN0M3NlcWx4d3BqbA=="
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram de Jotamedios"
+            title="Instagram"
+          >
+            <svg
+              class="btn-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8"
+              />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M16.5 7.5v.01" />
+            </svg>
+            Instagram
+          </a>
+        </nav>
+
+        <!-- Botón hamburguesa (mobile) -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Overlay (mobile) -->
+      <div class="menu-overlay" data-menu-close hidden></div>
+
+      <!-- Menú mobile -->
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <nav class="nav nav-mobile" aria-label="Menú móvil">
+          <a class="nav-link" href="#trabajos" data-menu-close>Trabajos</a>
+          <a class="nav-link" href="#sobre-mi" data-menu-close>Sobre mí</a>
+          <a class="nav-link" href="#contacto" data-menu-close>Contacto</a>
+
+          <a
+            class="btn btn-outline"
+            href="https://www.instagram.com/jotamedios?igsh=MXN0M3NlcWx4d3BqbA=="
+            target="_blank"
+            rel="noopener"
+            data-menu-close
+          >
+            <svg
+              class="btn-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8"
+              />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M16.5 7.5v.01" />
+            </svg>
+            Instagram
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="trabajos" class="section section-trabajos">
+        <div class="container container-wide">
+          <header class="stack-xs text-center">
+            <h2></h2>
+          </header>
+
+          <div class="works-grid">
+            <article class="work-card">
+              <a href="work1.html" class="work-link">
+                <div class="work-media">
+                  <img src="assets/work22.jpeg" alt="Husky – Never-Ever" />
+                </div>
+                <h3 class="work-title">Husky ‘Never-Ever’</h3>
+                <p class="work-meta">Music video · 2024</p>
+              </a>
+            </article>
+
+            <article class="work-card">
+              <a href="work1.html" class="work-link">
+                <div class="work-media">
+                  <img src="assets/work333.jpeg" alt="Talk – TV Promo" />
+                </div>
+                <h3 class="work-title">Talk ‘TV Promo’</h3>
+                <p class="work-meta">TV Commercial · 2023</p>
+              </a>
+            </article>
+
+            <article class="work-card">
+              <a href="work1.html" class="work-link">
+                <div class="work-media">
+                  <img src="assets/work1.jpeg" alt="Editorial Project" />
+                </div>
+                <h3 class="work-title">Editorial Project</h3>
+                <p class="work-meta">Short film · 2024</p>
+              </a>
+            </article>
+
+            <article class="work-card">
+              <a href="work1.html" class="work-link">
+                <div class="work-media">
+                  <img src="assets/work4.jpeg" alt="Commercial Campaign" />
+                </div>
+                <h3 class="work-title">Commercial Campaign</h3>
+                <p class="work-meta">Brand Film · 2022</p>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="sobre-mi" class="section section-about">
+        <div class="container container-narrow about-grid">
+          <!-- Foto -->
+          <figure class="about-photo">
+            <img src="assets/juanma.jpeg" alt="Jota Medios" loading="lazy" />
+          </figure>
+
+          <!-- Texto -->
+          <div class="about-content stack-sm">
+            <header class="stack-xs">
+              <h2>Sobre mí</h2>
+              <p class="text-muted">Director de fotografía · Montevideo</p>
+            </header>
+
+            <p class="about-text">
+              Jotamedios es un director de fotografía enfocado en construir
+              imágenes con intención. Su trabajo parte de la observación y del
+              entendimiento del ritmo propio de cada proyecto, priorizando
+              coherencia visual, atmósfera y una relación clara entre luz,
+              encuadre y narrativa.
+              <br />
+              Le interesan las imágenes que sugieren más de lo que muestran y la
+              luz que define el tono emocional de una pieza. Actualmente trabaja
+              en proyectos comerciales y audiovisuales, consolidando una
+              identidad visual sobria y cinematográfica.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand stack-xs">
+          <img src="assets/logo.png" alt="Jotamedios" class="footer-logo" />
+          <p class="footer-role">Director de Fotografía</p>
+        </div>
+
+        <div class="footer-links stack-xs">
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline"
+            href="https://www.instagram.com/jotamedios?igsh=MXN0M3NlcWx4d3BqbA=="
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram de Jotamedios"
+            title="Instagram"
+          >
+            <svg
+              class="btn-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8"
+              />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M16.5 7.5v.01" />
+            </svg>
+            Instagram
+          </a>
+          <a href="mailto:contacto@jotamedios.com"> contacto@jotamedios.com </a>
+        </div>
+      </div>
+
+      <div class="footer-copy">© 2026 Jotamedios — All rights reserved</div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

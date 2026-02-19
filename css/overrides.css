@@ -1,0 +1,218 @@
+/* =====================================================
+   OVERRIDES — JOTAMEDIOS
+   Tema oscuro cinematográfico
+===================================================== */
+
+/* =====================================================
+   1. VARIABLES DE COLOR
+===================================================== */
+
+:root {
+  /* =====================
+     BASE
+  ====================== */
+
+  --black-900: #0b0f14;
+  --black-800: #0e131a;
+
+  --white-100: #ffffff;
+
+  /* =====================
+     ESCALA DE TEXTO
+  ====================== */
+
+  --text-high: rgba(255, 255, 255, 0.92);
+  --text-medium: rgba(255, 255, 255, 0.68);
+  --text-low: rgba(255, 255, 255, 0.45);
+
+  /* =====================
+     SUPERFICIES
+  ====================== */
+
+  --surface-1: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.08);
+
+  /* =====================
+     BORDES
+  ====================== */
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-default: rgba(255, 255, 255, 0.14);
+
+  /* =====================
+     ACENTO
+  ====================== */
+
+  --accent: var(--white-100);
+
+  /* =====================
+     MAPEADO A TU SISTEMA
+  ====================== */
+
+  --color-bg: var(--black-900);
+  --color-bg-soft: var(--black-800);
+  --color-surface: var(--surface-1);
+
+  --color-text: var(--text-high);
+  --color-text-muted: var(--text-medium);
+  --color-border: var(--border-default);
+
+  --color-primary: var(--accent);
+  --color-primary-dark: var(--accent);
+
+  --header-bg: rgba(11, 15, 20, 0.75);
+  --overlay-bg: rgba(11, 15, 20, 0.85);
+
+  --nav-offset: 90px;
+}
+
+/* =====================================================
+   2. BASE GLOBAL
+===================================================== */
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Scroll anchors */
+html {
+  scroll-padding-top: var(--nav-offset);
+  scroll-behavior: smooth;
+}
+
+/* =====================================================
+   3. HEADER
+===================================================== */
+
+.site-header {
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* =====================================================
+   4. CONTENIDO
+===================================================== */
+
+.page {
+  position: relative;
+  z-index: 1;
+}
+
+/* =====================================================
+   5. CARDS
+===================================================== */
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+/* =====================================================
+   6. LINKS
+===================================================== */
+
+a {
+  color: var(--color-text);
+  transition: opacity var(--transition-fast);
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+/* =====================================================
+   7. BOTONES
+===================================================== */
+
+.btn-outline {
+  border: 1px solid var(--color-border);
+}
+
+.btn-outline:hover {
+  background: var(--surface-2);
+}
+
+/* =====================================================
+   8. WORKS (PORTFOLIO)
+===================================================== */
+
+.work-media {
+  border: 1px solid var(--border-subtle);
+  background: var(--color-bg-soft);
+}
+
+.work-title {
+  color: var(--color-text);
+}
+
+/* =====================================================
+   9. OVERLAYS
+===================================================== */
+
+.menu-overlay {
+  background: var(--overlay-bg);
+}
+
+.mobile-menu {
+  background: var(--color-bg-soft);
+}
+
+:root {
+  --header-height: 60px;
+}
+
+body {
+  padding-top: var(--header-height);
+}
+
+/* =========================================
+   TYPOGRAPHY — JOTAMEDIOS
+========================================= */
+
+:root {
+  --font-ui: "Manrope", sans-serif;
+  --font-display: "Manrope", sans-serif;
+}
+
+/* Body */
+body {
+  font-family: var(--font-ui);
+  font-weight: 400;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+/* h1 más protagonista */
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Texto más refinado */
+p {
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+/* Project meta */
+.project-meta,
+.text-muted {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}

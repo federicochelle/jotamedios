@@ -12,8 +12,8 @@
      BASE
   ====================== */
 
-  --black-900: #0b0f14;
-  --black-800: #0e131a;
+  --black-900: #000000;
+  --black-800: #000000;
 
   --white-100: #ffffff;
 
@@ -60,8 +60,8 @@
   --color-primary: var(--accent);
   --color-primary-dark: var(--accent);
 
-  --header-bg: rgba(11, 15, 20, 0.75);
-  --overlay-bg: rgba(11, 15, 20, 0.85);
+  --header-bg: rgba(0, 0, 0, 0.75);
+  --overlay-bg: rgba(0, 0, 0, 0.85);
 
   --nav-offset: 90px;
 }

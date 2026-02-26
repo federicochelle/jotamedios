@@ -89,6 +89,10 @@ h1 {
   line-height: 1.6;
   color: var(--color-text-muted);
   text-align: center;
+  background: var(--header-bg, rgba(11, 15, 20, 0.95));
+  backdrop-filter: blur(10px);
+  padding: var(--space-sm);
+  border-radius: var(--radius-lg);
 }
 
 .project-back {

@@ -22,6 +22,9 @@
 
 .work-card {
   display: grid;
+  background: var(--header-bg, rgba(11, 15, 20, 0.95));
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
 }
 
 /* Link interno estructura */
@@ -62,13 +65,14 @@
    TEXTOS
 ========================================= */
 
-.work-title {
+h3.work-title {
   font-size: 0.95rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--color-text);
   margin: 0;
+  margin-left: 0.7rem;
 }
 
 .work-meta {
@@ -84,5 +88,5 @@
 ========================================= */
 
 .work-card + .work-card {
-  margin-top: 0; /* Lo controla el grid */
+  margin-top: 0;
 }

@@ -277,6 +277,16 @@
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         const loader = document.getElementById("page-loader");
+        if (!loader) return;
+
+        // ✅ Si ya vio el loader en esta sesión, no lo muestres
+        const visited = sessionStorage.getItem("loaderShown");
+        if (visited) {
+          loader.remove(); // o loader.classList.add("hide");
+          return;
+        }
+        sessionStorage.setItem("loaderShown", "true");
+
         const paths = Array.from(document.querySelectorAll(".play-stroke"));
 
         // preparar draw

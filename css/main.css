@@ -51,7 +51,7 @@
 
 /* triángulo grande e invisible al inicio */
 .loader-play {
-  width: min(36vw, 560px);
+  width: min(36vw, 420px);
   height: auto;
   opacity: 0;
   transform-origin: 50% 50%;

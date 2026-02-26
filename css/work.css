@@ -1,6 +1,10 @@
 /* =========================================
    CARD VARIANT (sin padding)
 ========================================= */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  line-height: 1.1;
+}
 .card-plain {
   padding: 0;
 }
@@ -85,4 +89,10 @@
   line-height: 1.6;
   color: var(--color-text-muted);
   text-align: center;
+}
+
+.project-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
 }

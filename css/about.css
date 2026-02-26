@@ -1,16 +1,15 @@
 /* =========================================
    ABOUT (compacto: foto + texto)
 ========================================= */
-.about-content {
-  background: var(--header-bg, rgba(11, 15, 20, 0.95));
-  backdrop-filter: blur(10px);
-  padding: var(--space-sm);
-  border-radius: var(--radius-lg);
-}
+
 .about-grid {
   display: grid;
   gap: var(--space-lg);
   align-items: center;
+  background: var(--header-bg, rgba(11, 15, 20, 0.95));
+  backdrop-filter: blur(10px);
+  padding: var(--space-sm);
+  border-radius: var(--radius-lg);
 }
 
 /* Desktop: 2 columnas */

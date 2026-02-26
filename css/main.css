@@ -29,7 +29,7 @@
 .loader {
   position: fixed;
   inset: 0;
-  background: #0b0f14;
+  background: #000000;
   display: grid;
   place-items: center;
   z-index: 9999;
@@ -69,5 +69,14 @@
 
 main {
   background-image: url(../assets/AdobeStock_694943724.webp);
-  background-position: center;
+  background-size: cover;
+  background-position: top;
+}
+
+@media (max-width: 900px) {
+  main {
+    background-image: url(../assets/AdobeStock_694943724.jpg);
+
+    background-position: center;
+  }
 }

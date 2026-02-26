@@ -66,3 +66,7 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+main {
+  background-image: url(../assets/AdobeStock_694943724.webp);
+}

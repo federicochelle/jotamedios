@@ -66,17 +66,3 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-
-main {
-  background-image: url(../assets/AdobeStock_694943724.webp);
-  background-size: cover;
-  background-position: top;
-}
-
-@media (max-width: 900px) {
-  main {
-    background-image: url(../assets/AdobeStock_694943724.jpg);
-
-    background-position: center;
-  }
-}

@@ -216,3 +216,26 @@ p {
   letter-spacing: 0.05em;
   opacity: 0.7;
 }
+
+main {
+  position: relative; /* 🔥 necesario */
+  background-image: url(../assets/AdobeStock_694943724.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay */
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65); /* 0.75 es demasiado oscuro */
+  z-index: 0;
+}
+
+/* Todo el contenido por encima del overlay */
+main > * {
+  position: relative;
+  z-index: 1;
+}

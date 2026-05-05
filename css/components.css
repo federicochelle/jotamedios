@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   padding: 0.55em 1.1em;
   border-radius: var(--radius-sm);
   cursor: pointer;
@@ -276,6 +276,7 @@ svg {
 }
 
 .footer-role {
+  font-family: var(--font-display);
   font-size: 0.55rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -284,7 +285,9 @@ svg {
 
 .footer-links a {
   display: flex;
+  font-family: var(--font-display);
   font-size: 1rem;
+  letter-spacing: 0.03em;
   margin-bottom: 0.4rem;
   color: var(--color-text);
   opacity: 0.8;
@@ -298,6 +301,7 @@ svg {
 .footer-copy {
   text-align: center;
   margin-top: var(--space-lg);
+  font-family: var(--font-display);
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   opacity: 0.6;

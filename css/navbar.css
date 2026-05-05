@@ -98,8 +98,10 @@
 }
 
 .nav-link {
+  font-family: var(--font-display);
   color: var(--color-text-muted);
   font-weight: var(--font-weight-medium);
+  letter-spacing: 0.04em;
   transition: color var(--transition-fast);
 }
 

@@ -19,10 +19,22 @@ chips.forEach((chip) => {
 });
 
 const header = document.querySelector(".site-header");
+const homeHeader = document.querySelector(".site-header-home");
 const toggle = document.querySelector(".nav-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const overlay = document.querySelector(".menu-overlay");
 const closeTargets = document.querySelectorAll("[data-menu-close]");
+
+if (homeHeader) {
+  const syncHomeHeaderVisibility = () => {
+    homeHeader.classList.toggle("is-visible", window.scrollY > 80);
+  };
+
+  syncHomeHeaderVisibility();
+  window.addEventListener("scroll", syncHomeHeaderVisibility, {
+    passive: true,
+  });
+}
 
 if (header && toggle && mobileMenu && overlay) {
   const openMenu = () => {

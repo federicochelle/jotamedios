@@ -82,7 +82,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <!-- Header -->
-    <header class="site-header">
+    <header class="site-header site-header-home">
       <div class="container flex flex-between flex-wrap header-inner">
         <!-- Brand -->
         <a
@@ -104,36 +104,6 @@
         <nav class="nav nav-desktop" aria-label="Navegación principal">
           <a class="nav-link" href="#sobre-mi">Acerca</a>
           <a class="nav-link" href="#footer">Contacto</a>
-
-          <!-- Instagram -->
-          <a
-            class="btn btn-outline"
-            href="https://www.instagram.com/jotamedios?igsh=MXN0M3NlcWx4d3BqbA=="
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram de Jotamedios"
-            title="Instagram"
-          >
-            <svg
-              class="btn-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.25"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8"
-              />
-              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-              <path d="M16.5 7.5v.01" />
-            </svg>
-            Instagram
-          </a>
         </nav>
 
         <!-- Botón hamburguesa (mobile) -->
@@ -156,42 +126,31 @@
         <nav class="nav nav-mobile" aria-label="Menú móvil">
           <a class="nav-link" href="#sobre-mi" data-menu-close>Acerca</a>
           <a class="nav-link" href="#footer" data-menu-close>Contacto</a>
-
-          <a
-            class="btn btn-outline"
-            href="https://www.instagram.com/jotamedios?igsh=MXN0M3NlcWx4d3BqbA=="
-            target="_blank"
-            rel="noopener"
-            data-menu-close
-          >
-            <svg
-              class="btn-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.25"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8"
-              />
-              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-              <path d="M16.5 7.5v.01" />
-            </svg>
-            Instagram
-          </a>
         </nav>
       </div>
     </header>
     <main>
+      <section id="hero" class="section-hero" aria-label="Showreel principal">
+        <div class="hero-video-wrap">
+          <video
+            class="hero-video"
+            src="assets/showreel.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          ></video>
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-content"></div>
+      </section>
+
       <section id="trabajos" class="section section-trabajos">
         <div class="container container-wide">
           <header class="stack-xs text-center">
-            <h2></h2>
+            <h2>PROYECTOS SELECCIONADOS</h2>
           </header>
 
           <div class="works-grid">
@@ -251,19 +210,19 @@
             </article>
 
             <article class="work-card">
-              <div class="work-link">
+              <a href="pages/bmw.html" class="work-link">
                 <div class="work-media">
                   <img src="assets/AdobeStock_694943724.webp" alt="BMW" />
                 </div>
                 <h3 class="work-title">Showroom BMW x Cuchara Food Design</h3>
                 <p class="work-meta"></p>
-              </div>
+              </a>
             </article>
           </div>
         </div>
       </section>
       <section id="sobre-mi" class="section section-about">
-        <div class="container container-narrow about-grid">
+        <div class="container container-wide about-grid">
           <!-- Foto -->
           <figure class="about-photo">
             <img src="assets/juanma.webp" alt="Jota Medios" loading="lazy" />

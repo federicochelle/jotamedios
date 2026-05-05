@@ -11,6 +11,21 @@
   backdrop-filter: blur(10px);
 }
 
+.site-header-home {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+  transition:
+    opacity 280ms ease,
+    transform 280ms ease;
+}
+
+.site-header-home.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 .header-inner {
   padding-block: 0.9rem;
   gap: var(--space-sm);
@@ -93,7 +108,7 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.65rem;
   flex-wrap: wrap;
 }
 
@@ -101,7 +116,8 @@
   font-family: var(--font-display);
   color: var(--color-text-muted);
   font-weight: var(--font-weight-medium);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   transition: color var(--transition-fast);
 }
 
@@ -113,7 +129,7 @@
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* Toggle */

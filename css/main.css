@@ -17,6 +17,7 @@
 /* =========================
    4. PAGES / SECTIONS (hero, landing)
 ========================= */
+@import "hero.css";
 @import "trabajos.css";
 @import "about.css";
 

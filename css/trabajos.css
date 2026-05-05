@@ -2,6 +2,31 @@
    WORKS — Grid cinematográfico
 ========================================= */
 
+:root {
+  --home-section-gap: calc(var(--space-lg) + 0.5rem);
+}
+
+.section-trabajos {
+  margin-top: var(--home-section-gap);
+  padding-top: calc(var(--space-xl) + 2rem);
+  padding-bottom: var(--home-section-gap);
+}
+
+.section-trabajos h2 {
+  display: block;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+  padding: 0.75rem 1rem;
+  background: var(--header-bg, rgba(11, 15, 20, 0.95));
+  backdrop-filter: blur(10px);
+  margin-bottom: calc(var(--space-xl) * 1.5);
+}
+
 .works-grid {
   display: grid;
   gap: clamp(3rem, 6vw, 6rem);

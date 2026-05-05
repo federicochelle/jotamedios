@@ -36,8 +36,8 @@
      BORDES
   ====================== */
 
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-default: rgba(255, 255, 255, 0.14);
+  --border-subtle: transparent;
+  --border-default: transparent;
 
   /* =====================
      ACENTO

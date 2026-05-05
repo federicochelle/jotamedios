@@ -25,6 +25,36 @@ const mobileMenu = document.getElementById("mobile-menu");
 const overlay = document.querySelector(".menu-overlay");
 const closeTargets = document.querySelectorAll("[data-menu-close]");
 
+const revealTargets = [
+  ...document.querySelectorAll(
+    ".section-trabajos > .container > header, .work-card, .section-about .about-grid",
+  ),
+];
+
+if (revealTargets.length) {
+  revealTargets.forEach((el, index) => {
+    el.classList.add("reveal-on-scroll");
+    el.dataset.revealDelay = String(index % 4);
+  });
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("is-revealed");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.14,
+      rootMargin: "0px 0px -8% 0px",
+    },
+  );
+
+  revealTargets.forEach((el) => revealObserver.observe(el));
+}
+
 if (homeHeader) {
   const syncHomeHeaderVisibility = () => {
     homeHeader.classList.toggle("is-visible", window.scrollY > 80);

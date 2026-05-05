@@ -79,6 +79,13 @@
   transition: transform var(--transition-base);
 }
 
+@media (max-width: 899px) {
+  .work-media img,
+  .work-media video {
+    aspect-ratio: 16 / 5.5;
+  }
+}
+
 /* Hover sutil cinematográfico */
 .work-card:hover .work-media img,
 .work-card:hover .work-media video {

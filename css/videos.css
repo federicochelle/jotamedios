@@ -1,6 +1,7 @@
 .section-videos {
-  margin-top: var(--home-section-gap);
-  padding-block: var(--home-section-gap);
+  margin-top: calc(var(--home-section-gap) / 2);
+  padding-top: calc(var(--home-section-gap) * 0.6);
+  padding-bottom: var(--home-section-gap);
 }
 
 .section-videos h2 {
@@ -103,6 +104,11 @@
 }
 
 @media (max-width: 899px) {
+  .section-videos {
+    margin-top: calc(var(--home-section-gap) * 0.35);
+    padding-top: calc(var(--home-section-gap) * 0.35);
+  }
+
   .video-placeholder {
     min-height: 480px;
   }

@@ -55,6 +55,42 @@ if (revealTargets.length) {
   revealTargets.forEach((el) => revealObserver.observe(el));
 }
 
+const lazyVideos = document.querySelectorAll("video[data-video-lazy]");
+
+if (lazyVideos.length) {
+  const hydrateVideo = (video) => {
+    if (video.getAttribute("src")) return;
+
+    const src = video.dataset.src;
+    if (!src) return;
+
+    video.setAttribute("src", src);
+    video.load();
+
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
+  };
+
+  const lazyVideoObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        hydrateVideo(entry.target);
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      rootMargin: "0px 0px 220px 0px",
+      threshold: 0.1,
+    },
+  );
+
+  lazyVideos.forEach((video) => lazyVideoObserver.observe(video));
+}
+
 if (homeHeader) {
   const syncHomeHeaderVisibility = () => {
     homeHeader.classList.toggle("is-visible", window.scrollY > 80);
